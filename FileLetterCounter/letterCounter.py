@@ -1,7 +1,7 @@
-
+import pathlib
 # Counts the amount of letters in a given text file and returns its dictionary
 def countLetters (fileName, fileType):
-    path = "C:\\Users\\iplay\\Documents\\intellj\\letterSoup\\textFiles"
+    path = str(pathlib.Path().resolve()) + "\\textFiles"
     if fileType == "book":
         path += "\\books"
     elif fileType == "movie":
