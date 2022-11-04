@@ -1,4 +1,5 @@
 from FileLetterCounter.letterCounter import *
 
-
-print(countLetters("testBook", "book"))
+dict = countLetters("bible", "book")
+print(dict)
+print(max(dict, key=dict.get), ":", max(dict.values()))
