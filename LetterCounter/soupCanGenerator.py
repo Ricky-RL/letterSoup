@@ -1,12 +1,12 @@
-from letterCounter import generateAlphabetKeys
+from LetterCounter.letterCounter import generateAlphabetKeys
 from string import ascii_lowercase as alc
 import numpy as np
 
 
-canOfSoupSize = 180
+__canOfSoupSize = 180
 #generaets a random can of soup and returns it
 def generateSoupCan():
-    return [*map(lambda x: np.round(x * canOfSoupSize), np.random.dirichlet(np.ones(26),size=1).tolist()[0])]
+    return [*map(lambda x: np.round(x * __canOfSoupSize), np.random.dirichlet(np.ones(26),size=1).tolist()[0])]
 
 
 #produces an average can of soup averaging n > 0 number of times
@@ -23,11 +23,6 @@ def averageAlphabetSoup(n):
 
     return dict
 
-
-
-
-print(averageAlphabetSoup(5))
-print(sum(averageAlphabetSoup(5).values()))
 
 
 
