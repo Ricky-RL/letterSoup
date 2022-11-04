@@ -2,7 +2,7 @@ from LetterCounter.letterCounter import *
 from LetterCounter.soupCanGenerator import *
 from string import ascii_lowercase as alc
 
-dict = countLetters("bible", "book")
+dict = countLetters("shrek", "movie")
 
 def getSoupCanAmount():
 
